@@ -1,0 +1,61 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.7009999752044678,
+                        0.3009999990463257,
+                        0.3050000071525574
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "Tex_Main_torso": {
+            "shader": "Main shader"
+        },
+        "Tex_Under_muscle": {
+            "shader": "Main shader"
+        },
+        "Tex_bones": {
+            "shader": "Main shader"
+        },
+        "Tex_intestines": {
+            "shader": "Main shader"
+        },
+        "Tex_nail": {
+            "shader": "Main shader"
+        },
+        "Tex_staff": {
+            "shader": "Main shader"
+        },
+        "Tex_tail": {
+            "shader": "Main shader"
+        },
+        "tex_cloth": {
+            "shader": "Main shader"
+        }
+    }
+}
